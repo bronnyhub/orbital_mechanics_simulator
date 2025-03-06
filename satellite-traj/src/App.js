@@ -1,5 +1,9 @@
-import logo from './logo.svg';
+import logo from './solar-system.png';
 import './App.css';
+
+function Button({ text, onClick }) {
+  return <button onClick={onClick}>{text}</button>;
+}
 
 function App() {
   return (
@@ -7,7 +11,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Orbital mechanics simulator
         </p>
         <a
           className="App-link"
@@ -18,6 +22,15 @@ function App() {
           Learn React
         </a>
       </header>
+      <Button text="Mercury" onClick={() => alert("Hello!")} />
+        <Button text="Wenus" onClick={() => alert("Hello!")} />
+        <Button text="Earth" onClick={() => alert("Hello!")} />
+        <Button text="Mars" onClick={() => alert("Hello!")} />
+        <Button text="Jupiter" onClick={() => alert("Hello!")} />
+        <Button text="Saturn" onClick={() => alert("Hello!")} />
+        <Button text="Uranus" onClick={() => alert("Hello!")} />
+        <Button text="Neptune" onClick={() => alert("Hello!")} />
+        <Button text="Pluto" onClick={() => alert("Hello!")} />
     </div>
   );
 }
