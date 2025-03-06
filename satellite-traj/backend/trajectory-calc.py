@@ -19,3 +19,6 @@ M_planet = planet["mass"]
 R_planet = planet["radius"]
 
 print(f"Simulating orbit around {planet_name} (Mass: {M_planet} kg, Radius: {R_planet} m)")
+
+
+####SIMULATE THE SHIT
